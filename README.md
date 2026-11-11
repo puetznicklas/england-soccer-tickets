@@ -5,6 +5,7 @@ Ticket and hospitality research for an England trip, 8–18 April 2027.
 | Match | Date | Folder |
 | --- | --- | --- |
 | Liverpool v Newcastle United, Anfield | Sat 10 Apr 2027, 3:00pm BST | [`liverpool-v-newcastle/`](liverpool-v-newcastle/) |
+| Brighton & Hove Albion v Chelsea, American Express Stadium | Sat 17 Apr 2027, 3:00pm BST | [`brighton-v-chelsea/`](brighton-v-chelsea/) |
 
 Each folder is a self-contained page. To view one locally, run a web server from the repository root and open the folder:
 
