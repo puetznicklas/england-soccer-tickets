@@ -1,0 +1,49 @@
+/* Base tokens the dashboard styles use. Page-specific colours (the Embers palette) live in index.html. */
+:root {
+  --font-anthropic-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --color-fg: #1d1c26;
+  --color-fg-muted: #67657d;
+  --color-bg: #f6f5fa;
+  --color-panel: #ffffff;
+  --color-border-line: #e2e0ec;
+  --color-ok: #1f7a4d;
+  --color-warn: #9a6400;
+  --cds-font-size-body: 14.5px;
+  --cds-font-size-caption: 12.5px;
+  --cds-font-size-heading: 15px;
+  --cds-font-size-title: 28px;
+  --cds-font-weight-medium: 550;
+  --cds-gap-xs: 6px;
+  --cds-gap-sm: 10px;
+  --cds-gap-md: 14px;
+  --cds-gap-lg: 20px;
+  --cds-pad-sm: 8px;
+  --cds-pad-md: 14px;
+  --cds-radius: 10px;
+  --cds-surface-popover: #ffffff;
+  --cds-border: #e2e0ec;
+  --cds-shadow-popover: 0 10px 30px rgba(30, 25, 50, .16), 0 2px 6px rgba(30, 25, 50, .08);
+  --cds-text-secondary: #67657d;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-fg: #eef0f6; --color-fg-muted: #a7afc3; --color-bg: #1d2738; --color-panel: #243046; --color-border-line: #3a4864;
+    --color-ok: #5fd39a; --color-warn: #f2c14e;
+    --cds-surface-popover: #2a3650; --cds-border: #3a4864; --cds-shadow-popover: 0 10px 30px rgba(0, 0, 0, .45); --cds-text-secondary: #a7afc3;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --color-fg: #eef0f6; --color-fg-muted: #a7afc3; --color-bg: #1d2738; --color-panel: #243046; --color-border-line: #3a4864;
+  --color-ok: #5fd39a; --color-warn: #f2c14e;
+  --cds-surface-popover: #2a3650; --cds-border: #3a4864; --cds-shadow-popover: 0 10px 30px rgba(0, 0, 0, .45); --cds-text-secondary: #a7afc3;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--color-bg); color: var(--color-fg); font: var(--cds-font-size-body)/1.45 var(--font-anthropic-sans); -webkit-font-smoothing: antialiased; }
+#dash-root { padding: 28px max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px)); min-height: 100vh; }
+[hidden] { display: none !important; }
+img { max-width: 100%; }

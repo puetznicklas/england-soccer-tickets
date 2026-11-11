@@ -1,0 +1,115 @@
+[
+ {
+  "lounge": "The Richardson",
+  "where": "East Stand. The club's largest and liveliest hospitality suite",
+  "stand": "EAST",
+  "seat": "Central padded Executive Level Two seat, East Stand",
+  "food": [
+   "Three-course pre-match meal",
+   "Half-time savoury snack",
+   "Full-time refreshments"
+  ],
+  "drinks": [
+   "Pay bar",
+   "Half-time tea and coffee",
+   "Optional upgrade to complimentary beers, wines and soft drinks for £35 + VAT (£42) per person"
+  ],
+  "extras": [
+   "Shared tables of 8–10 guests",
+   "Pre-match and post-match Q&A with an Albion legend",
+   "First-team player appearance after the match (subject to availability)",
+   "Match programme and team sheet",
+   "Offsite parking (1 space per 4 places booked)"
+  ],
+  "access": "East Stand hospitality opens 3 hours before kick-off (12 noon for a 3pm start) and closes one hour after full time.",
+  "photos": "https://www.wba.co.uk/hospitality/match-match-hospitality/richardson"
+ },
+ {
+  "lounge": "The Millichip",
+  "where": "East Stand. Recently refurbished fine-dining suite",
+  "stand": "EAST",
+  "seat": "Central padded executive seat, East Stand",
+  "food": [
+   "Champagne reception",
+   "Four-course meal at your private table",
+   "Half-time and full-time refreshments"
+  ],
+  "drinks": [
+   "Complimentary bar (excluding champagne)"
+  ],
+  "extras": [
+   "Pre-match and post-match Q&A with an Albion legend",
+   "Match programme and team sheet",
+   "Secure reserved VIP parking (1 space per 4 guests)"
+  ],
+  "access": "East Stand hospitality opens 3 hours before kick-off (12 noon for a 3pm start) and closes one hour after full time.",
+  "photos": "https://www.wba.co.uk/hospitality/match-match-hospitality/millichip"
+ },
+ {
+  "lounge": "Executive Box",
+  "where": "East Stand, private box",
+  "stand": "EAST",
+  "seat": "Eight padded seats on your box's own balcony",
+  "food": [
+   "Four-course pre-match dining",
+   "Half-time and full-time refreshments"
+  ],
+  "drinks": [
+   "Complimentary bar (excluding champagne)"
+  ],
+  "extras": [
+   "Private box for 8 guests with hostess service",
+   "Match programme and team sheet",
+   "Secure reserved VIP parking (1 space per 4 guests)"
+  ],
+  "access": "East Stand hospitality opens 3 hours before kick-off (12 noon for a 3pm start) and closes one hour after full time.",
+  "photos": "https://www.wba.co.uk/hospitality/match-match-hospitality/executive-box"
+ },
+ {
+  "lounge": "Kit Sponsor",
+  "where": "East Stand, match sponsors' hospitality",
+  "stand": "EAST",
+  "seat": "Central padded executive seats, East Stand",
+  "food": [
+   "Champagne on arrival",
+   "Three-course pre-match meal",
+   "Post-match cheese board"
+  ],
+  "drinks": [
+   "Complimentary bar (excludes champagne and double spirit measures)"
+  ],
+  "extras": [
+   "Pre-match stadium tour: first-team dressing rooms, dugout, tunnel and pitchside",
+   "Two guests line up in the centre circle with the captains and officials before kick-off",
+   "Signed shirt from your chosen player, presented after the match",
+   "Gift for each guest",
+   "Logo in the match programme and on the stadium screens",
+   "Photos of your party sent after the match"
+  ],
+  "access": "Sponsors arrive earlier than other guests for the stadium tour; the club sends an itinerary with the tickets.",
+  "photos": "https://www.wba.co.uk/hospitality/match-sponsorships"
+ },
+ {
+  "lounge": "Matchball Sponsor",
+  "where": "East Stand, match sponsors' hospitality",
+  "stand": "EAST",
+  "seat": "Central padded executive seats, East Stand",
+  "food": [
+   "Champagne on arrival",
+   "Three-course pre-match meal",
+   "Post-match cheese board"
+  ],
+  "drinks": [
+   "Complimentary bar (excludes champagne and double spirit measures)"
+  ],
+  "extras": [
+   "Pre-match stadium tour: first-team dressing rooms, dugout, tunnel and pitchside",
+   "Two guests line up in the centre circle with the captains and officials before kick-off",
+   "Signed match ball in a display case, presented after the match",
+   "Gift for each guest",
+   "Logo in the match programme and on the stadium screens"
+  ],
+  "access": "Sponsors arrive earlier than other guests for the stadium tour; the club sends an itinerary with the tickets.",
+  "photos": "https://www.wba.co.uk/hospitality/match-sponsorships"
+ }
+]
