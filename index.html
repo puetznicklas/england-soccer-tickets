@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>England Soccer Tickets</title>
+<meta name="description" content="Hospitality packages for three matches on an England trip, April 2027: Liverpool v Newcastle, Brighton v Chelsea and West Brom v Middlesbrough.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&display=swap">
+<style>
+:root { --bg: #f5f5f9; --fg: #1d1d27; --muted: #63657a; --seg: #e7e7f0; --on: #ffffff; --line: #dedfe9; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #1a2233; --fg: #eef0f6; --muted: #a7afc3; --seg: #2a354b; --on: #3a4763; --line: #35435c; } }
+:root[data-theme="dark"] { --bg: #1a2233; --fg: #eef0f6; --muted: #a7afc3; --seg: #2a354b; --on: #3a4763; --line: #35435c; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--fg); font-family: Inter, system-ui, sans-serif; transition: background .2s; }
+.tabs-wrap { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); padding: 10px clamp(16px, 3vw, 32px); transition: background .2s; }
+.tabs { display: flex; gap: 4px; max-width: 78rem; margin-inline: auto; background: var(--seg); border-radius: 14px; padding: 4px; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tabs button { all: unset; box-sizing: border-box; cursor: pointer; flex: 1 1 0; min-width: max-content; padding: 8px 14px; border-radius: 10px; text-align: center; color: var(--muted); }
+.tabs button b { display: block; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.tabs button span { display: block; font-size: 12px; margin-top: 1px; white-space: nowrap; }
+.tabs button[aria-selected=true] { background: var(--on); color: var(--fg); box-shadow: 0 1px 2px rgba(0, 0, 0, .12); }
+.tabs button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.panel iframe { display: block; width: 100%; border: 0; min-height: 60vh; }
+.panel[hidden] { display: none; }
+.tabs button i { font-style: normal; }
+@media (max-width: 640px) { .tabs button { padding: 7px 6px; min-width: 0; } .tabs button b { font-size: 12.5px; white-space: normal; line-height: 1.25; } .tabs button span { font-size: 11.5px; } .tabs button i { display: none; } }
+</style>
+</head>
+<body>
+<div class="tabs-wrap">
+  <div class="tabs" role="tablist" aria-label="Match">
+    <button type="button" role="tab" id="tab-liverpool" data-tab="liverpool" data-src="liverpool-v-newcastle/" aria-controls="panel-liverpool"><b>Liverpool v Newcastle</b><span>Sat 10 Apr<i> · Anfield</i></span></button>
+    <button type="button" role="tab" id="tab-brighton" data-tab="brighton" data-src="brighton-v-chelsea/" aria-controls="panel-brighton"><b>Brighton v Chelsea</b><span>Sat 17 Apr<i> · Amex Stadium</i></span></button>
+    <button type="button" role="tab" id="tab-westbrom" data-tab="westbrom" data-src="west-brom-v-middlesbrough/" aria-controls="panel-westbrom"><b>West Brom v Middlesbrough</b><span>Sat 17 Apr<i> · The Hawthorns</i></span></button>
+  </div>
+</div>
+<main id="panels"></main>
+<script>
+(() => {
+  // Each tab shows one match folder's own page inside a frame, loaded the first time its tab is opened.
+  const tabs = [...document.querySelectorAll('.tabs button')];
+  const panels = document.getElementById('panels');
+  const made = {};
+  const fit = (frame) => {
+    try { const d = frame.contentDocument; if (d && d.documentElement) frame.style.height = Math.max(d.documentElement.scrollHeight, d.body ? d.body.scrollHeight : 0) + 'px'; } catch (e) {}
+  };
+  const tint = (frame) => {
+    // Match the surrounding page to the open match's background colour.
+    try { const r = frame.contentDocument.getElementById('dash-root'); const c = r && getComputedStyle(r).backgroundColor; if (c && c !== 'rgba(0, 0, 0, 0)') document.body.style.background = c; document.querySelector('.tabs-wrap').style.background = document.body.style.background; } catch (e) {}
+  };
+  const build = (btn) => {
+    const panel = document.createElement('section'); panel.className = 'panel'; panel.id = 'panel-' + btn.dataset.tab; panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', btn.id);
+    const frame = document.createElement('iframe'); frame.src = btn.dataset.src; frame.title = btn.querySelector('b').textContent + ' hospitality packages';
+    frame.addEventListener('load', () => {
+      fit(frame); if (!panel.hidden) tint(frame);
+      try { new ResizeObserver(() => fit(frame)).observe(frame.contentDocument.body); } catch (e) {}
+    });
+    setInterval(() => { if (!panel.hidden) fit(frame); }, 400);
+    panel.appendChild(frame); panels.appendChild(panel);
+    return { panel, frame };
+  };
+  const show = (name, push) => {
+    const btn = tabs.find((b) => b.dataset.tab === name) || tabs[0];
+    tabs.forEach((b) => { const on = b === btn; b.setAttribute('aria-selected', on); b.tabIndex = on ? 0 : -1; });
+    if (!made[btn.dataset.tab]) made[btn.dataset.tab] = build(btn);
+    Object.entries(made).forEach(([k, m]) => { m.panel.hidden = k !== btn.dataset.tab; });
+    const m = made[btn.dataset.tab]; fit(m.frame); tint(m.frame);
+    if (push) { try { history.replaceState(null, '', '#' + btn.dataset.tab); } catch (e) {} try { localStorage.setItem('hx:tab', btn.dataset.tab); } catch (e) {} }
+    btn.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  };
+  tabs.forEach((b, i) => {
+    b.addEventListener('click', () => show(b.dataset.tab, true));
+    b.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length]; n.focus(); show(n.dataset.tab, true);
+    });
+  });
+  window.addEventListener('hashchange', () => show(location.hash.slice(1), false));
+  let start = location.hash.slice(1);
+  if (!start) { try { start = localStorage.getItem('hx:tab'); } catch (e) {} }
+  show(start, false);
+})();
+</script>
+</body>
+</html>
