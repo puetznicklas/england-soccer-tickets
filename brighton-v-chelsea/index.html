@@ -241,6 +241,9 @@ td[data-f=link], td[data-f=del] { vertical-align: top; padding-top: 10px; }
 .hx-btn:hover { border-color: var(--hx-hot); color: var(--hx-hot); }
 .hx-hot { text-decoration-color: color-mix(in srgb, var(--hx-accent2) 55%, transparent); }
 .hx-foot h2 { color: var(--hx-accent); }
+/* ---- Banner ---- */
+.hx-banner { margin: 0; border-radius: 14px; overflow: hidden; aspect-ratio: 2000 / 667; max-height: 420px; background: var(--hx-head); }
+.hx-banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
 /* ---- Food / Drink dots ---- */
 #dash-root { --hx-yes: #2e9d63; --hx-no: #e0475f; --hx-warn: #e8b323; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #dash-root { --hx-yes: #5fd39a; --hx-no: #ff6b7f; --hx-warn: #f2c14e; } }
@@ -277,6 +280,7 @@ td[data-f=link], td[data-f=del] { vertical-align: top; padding-top: 10px; }
 
 
 <div class="hx">
+  <figure class="hx-banner" id="banner"><img src="assets/chelsea-bus-banner.webp" alt="Illustration of a blue Chelsea double-decker bus outside Stamford Bridge" width="2000" height="667" decoding="async"></figure>
   <header class="hx-top" id="top">
     <p class="hx-eyebrow">Premier League · Sat 17 Apr 2027 · 3:00pm BST · American Express Stadium</p>
     <h1 class="hx-title">Brighton v Chelsea Tickets</h1>

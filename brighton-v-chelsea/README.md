@@ -35,6 +35,7 @@ Run that from this folder, or from the repository root and open `/brighton-v-che
 | `data/offers.json` | One row per package: seller, lounge, seats, price, hotel, food, drink, notes, link |
 | `data/lounges.json` | What each lounge includes, used in the lounge popups |
 | `data/fx.json` | GBP/USD rate used to convert pound prices |
+| `assets/chelsea-bus-banner.webp` | Banner illustration |
 
 ## Updating prices
 
