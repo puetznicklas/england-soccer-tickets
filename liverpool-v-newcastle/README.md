@@ -19,7 +19,7 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-It also works as-is on GitHub Pages (Settings → Pages → deploy from the `main` branch, root folder).
+Run that from this folder, or from the repository root and open `/liverpool-v-newcastle/`. It also works as-is on GitHub Pages (see the README at the repository root).
 
 ## Files
 
