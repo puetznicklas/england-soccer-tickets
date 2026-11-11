@@ -1,0 +1,281 @@
+[
+ {
+  "lounge": "Brodies Sports Bar",
+  "where": "Anfield Road Stand, first floor",
+  "stand": "ARS",
+  "seat": "Padded seat, Anfield Road Stand middle tier (AM blocks), behind the goal",
+  "food": [
+   "Complimentary street food before kick-off"
+  ],
+  "drinks": [
+   "One half-time drink (beer, house wine or soft drink)",
+   "Cashless pay bar before and up to 1 hour after",
+   "Tea and coffee"
+  ],
+  "extras": [
+   "Visit from a former LFC player",
+   "Matchday programme",
+   "Pre-match entertainment",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after. Direct access to seats.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/brodies-sports-bar"
+ },
+ {
+  "lounge": "Anfield Beat Lounge",
+  "where": "Main Stand",
+  "stand": "MAIN",
+  "seat": "Main Stand lower tier, blocks L15–L16, toward the Kop",
+  "food": [
+   "Food available to buy (not included)"
+  ],
+  "drinks": [
+   "One complimentary drink (beer, wine or soft drink)",
+   "Licensed cash bar"
+  ],
+  "extras": [
+   "LFC legend in attendance",
+   "Matchday programme",
+   "Pre-match entertainment",
+   "In-lounge betting",
+   "LFCTV on screens"
+  ],
+  "access": "Opens 3 hours before, closes 1 hour after. Direct lounge-to-seat access.",
+  "photos": "https://www.liverpoolfc.com/hospitality/official-match-breaks-hospitality-suppliers"
+ },
+ {
+  "lounge": "The Code Lounge",
+  "where": "Main Stand, level 3",
+  "stand": "MAIN",
+  "seat": "Main Stand lower tier, blocks L11–L12, toward the Anfield Road End",
+  "food": [
+   "Food available to buy (not included)"
+  ],
+  "drinks": [
+   "Half-time drink voucher (beer, wine or soft drink)",
+   "Licensed cash bar"
+  ],
+  "extras": [
+   "Former LFC player",
+   "Live music and pre-match entertainment",
+   "Matchday programme",
+   "LFCTV on screens"
+  ],
+  "access": "Direct access to seats.",
+  "photos": "https://www.liverpoolfc.com/hospitality/official-match-breaks-hospitality-suppliers"
+ },
+ {
+  "lounge": "The Village",
+  "where": "The Sandon complex, Oakfield Road (0.2 miles from Anfield)",
+  "stand": "OFF",
+  "seat": "Upper Sir Kenny Dalglish Stand, block CE2 or CE8",
+  "food": [
+   "Two-course buffet"
+  ],
+  "drinks": [
+   "One complimentary drink",
+   "Pre-match cash bar",
+   "Tea and coffee"
+  ],
+  "extras": [
+   "Matchday programme",
+   "LFCTV on screens"
+  ],
+  "access": "Pre-match only, off-site. Allow 30 minutes to walk to your seat.",
+  "photos": "https://www.liverpoolfc.com/hospitality/official-match-breaks-hospitality-suppliers"
+ },
+ {
+  "lounge": "Premier Club",
+  "where": "Sir Kenny Dalglish Stand, first floor (Shankly and Paisley suites)",
+  "stand": "KD",
+  "seat": "Executive padded seat, upper Sir Kenny Dalglish Stand (CE3–CE7), long side",
+  "food": [
+   "Hot and cold pre-match buffet"
+  ],
+  "drinks": [
+   "Cashless pay bar before and up to 1 hour after",
+   "Half-time tea and coffee"
+  ],
+  "extras": [
+   "Matchday programme",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/official-match-breaks-hospitality-suppliers"
+ },
+ {
+  "lounge": "Founders Lounge",
+  "where": "Anfield Road Stand, first floor",
+  "stand": "ARS",
+  "seat": "Anfield Road Stand middle tier, block AM4 or AM5 (centre)",
+  "food": [
+   "Champagne on arrival",
+   "Four-course matchday menu",
+   "Half-time and full-time refreshments"
+  ],
+  "drinks": [
+   "Complimentary full bar (not during the game)"
+  ],
+  "extras": [
+   "Visit from a former LFC player",
+   "Matchday programme and gift",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/founders-lounge"
+ },
+ {
+  "lounge": "The Beautiful Game",
+  "where": "Main Stand, level 5",
+  "stand": "MAIN",
+  "seat": "Main Stand middle tier, block M4",
+  "food": [
+   "Three-course matchday menu"
+  ],
+  "drinks": [
+   "Complimentary beer, house wine and soft drinks (table service)"
+  ],
+  "extras": [
+   "Visit from a former LFC player",
+   "Matchday programme and gift",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/the-beautiful-game"
+ },
+ {
+  "lounge": "Japan Airlines Lounge",
+  "where": "Main Stand, level 3",
+  "stand": "MAIN",
+  "seat": "Main Stand lower tier, block L14, next to the Directors' Box",
+  "food": [
+   "Three-course matchday menu"
+  ],
+  "drinks": [
+   "Complimentary beer, house wine and soft drinks"
+  ],
+  "extras": [
+   "Visit from a former LFC player",
+   "Matchday programme and gift",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/japan-airlines-lounge"
+ },
+ {
+  "lounge": "Carlsberg Dugout (Kop End)",
+  "where": "Main Stand, level 4",
+  "stand": "MAIN",
+  "seat": "Main Stand middle tier, far wing block M9",
+  "food": [
+   "Complimentary street food before kick-off"
+  ],
+  "drinks": [
+   "One half-time drink (beer, house wine or soft drink)",
+   "Cashless pay bar before and up to 1 hour after"
+  ],
+  "extras": [
+   "Visit from a former LFC player",
+   "Matchday programme",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/the-carlsberg-dugout-kop-end"
+ },
+ {
+  "lounge": "Carlsberg Dugout (Anfield Road End)",
+  "where": "Main Stand, level 4",
+  "stand": "MAIN",
+  "seat": "Main Stand middle tier, far wing block M1",
+  "food": [
+   "Complimentary street food before kick-off"
+  ],
+  "drinks": [
+   "One half-time drink (beer, house wine or soft drink)",
+   "Cashless pay bar before and up to 1 hour after"
+  ],
+  "extras": [
+   "Visit from a former LFC player",
+   "Matchday programme",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/the-carlsberg-dugout-anfield-road-end"
+ },
+ {
+  "lounge": "Forever Reds Lounge",
+  "where": "Sir Kenny Dalglish Stand, ground floor",
+  "stand": "KD",
+  "seat": "Sir Kenny Dalglish Stand lower tier, wing blocks KG, KP or KN",
+  "food": [
+   "Complimentary street food before kick-off"
+  ],
+  "drinks": [
+   "One half-time drink",
+   "Cashless pay bar before and up to 1 hour after",
+   "Tea and coffee all day"
+  ],
+  "extras": [
+   "Visit from a former LFC player",
+   "Matchday programme",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/forever-reds-lounge"
+ },
+ {
+  "lounge": "The Boot Room Restaurant",
+  "where": "Kop end, first floor, next to the LFC Story museum",
+  "stand": "KOP",
+  "seat": "Anfield Road Stand upper tier, block AU4 (stairs only)",
+  "food": [
+   "Three-course set matchday menu",
+   "Tea and coffee at full time"
+  ],
+  "drinks": [
+   "Cashless pay bar before and up to 1 hour after"
+  ],
+  "extras": [
+   "Pre-match entry to the LFC Story museum",
+   "Visit from a former LFC player",
+   "Matchday programme",
+   "Free Wi-Fi"
+  ],
+  "access": "Opens 3 hours before kick-off, closes 1 hour after.",
+  "photos": "https://www.liverpoolfc.com/hospitality/packages/the-boot-room-restaurant"
+ },
+ {
+  "lounge": "The Sandon",
+  "where": "The Sandon pub, a short walk from Anfield",
+  "stand": "OFF",
+  "seat": "Anfield Road Stand upper tier (stairs only)",
+  "food": [
+   "Food served on arrival"
+  ],
+  "drinks": [
+   "Reception drink"
+  ],
+  "extras": [
+   "Matchday programme"
+  ],
+  "access": "Opens 3.5 hours before, ends 30 minutes before kick-off. No hospitality inside the stadium.",
+  "photos": "https://www.liverpoolfc.com/hospitality/fixtures/liverpool-v-newcastle-united-2026-27/the-sandon"
+ },
+ {
+  "lounge": "The Isla Gladstone",
+  "where": "Stanley Park, a short walk from Anfield",
+  "stand": "OFF",
+  "seat": "Anfield Road Stand upper tier (stairs only)",
+  "food": [
+   "Three-course set matchday menu"
+  ],
+  "drinks": [
+   "Reception drink"
+  ],
+  "extras": [
+   "Matchday programme"
+  ],
+  "access": "Opens 3.5 hours before, ends 30 minutes before kick-off. No hospitality inside the stadium.",
+  "photos": "https://www.liverpoolfc.com/hospitality/fixtures/liverpool-v-newcastle-united-2026-27/the-isla-gladstone"
+ }
+]

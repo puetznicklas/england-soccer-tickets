@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liverpool v Newcastle Tickets</title>
+<meta name="description" content="Hospitality packages for Liverpool v Newcastle United, Anfield, Sat 10 Apr 2027, from Liverpool FC and its listed match-break suppliers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&display=swap">
+<link rel="stylesheet" href="css/theme.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="js/dash-runtime.js"></script>
+</head>
+<body>
+<div id="dash-root" lang="en">
+<style>
+#dash-root { --dash-gutter: clamp(16px, 3vw, 32px); }
+.hx { font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-lg); max-width: 78rem; margin-inline: auto; }
+.hx-top { display: grid; gap: var(--cds-gap-xs); }
+.hx-eyebrow { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .04em; text-transform: uppercase; }
+.hx-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); text-wrap: balance; }
+.hx-take { margin: 0; font-size: var(--cds-font-size-body); max-width: 70ch; }
+.hx .hx-take b { font-weight: 600; }
+.hx-bar { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-md); align-items: end; }
+.hx-field { display: grid; gap: 4px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.hx-field select, .hx-field input[type=search] { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 6px 10px; min-width: 0; }
+.hx-check { display: flex; gap: 8px; align-items: center; font-size: var(--cds-font-size-body); color: var(--color-fg); padding-bottom: 7px; }
+.hx-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.hx-keys { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); align-items: center; }
+.hx-dot { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.hx-dot.ok { background: var(--color-ok); } .hx-dot.warn { background: var(--color-warn); } .hx-dot.muted { background: var(--color-border-line); }
+
+.hx-board { position: relative; display: grid; gap: var(--cds-gap-lg); }
+.hx-group { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: grid; gap: var(--cds-gap-sm); min-width: 0; }
+.hx-scroll { overflow-x: auto; min-width: 0; }
+.hx-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); font-variant-numeric: tabular-nums; }
+.hx-table caption { text-align: left; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); padding-bottom: var(--cds-pad-sm); }
+.hx-table th { text-align: left; font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); padding: 6px 10px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.hx-table th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+.hx-table th button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; border-radius: 2px; }
+.hx-table th[aria-sort] button::after { content: "↕"; opacity: .35; }
+.hx-table th[aria-sort=ascending] button::after { content: "↑"; opacity: 1; }
+.hx-table th[aria-sort=descending] button::after { content: "↓"; opacity: 1; }
+.hx-table td { padding: 10px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.hx-table tr:last-child td { border-bottom: 0; }
+.hx-table td.num { text-align: center; white-space: nowrap; }
+.hx-table th.num { text-align: center; }
+.hx-table { table-layout: fixed; width: 1200px; max-width: none; }
+.hx-table th { position: relative; overflow: hidden; text-overflow: ellipsis; padding-right: 14px; }
+.hx-table td { overflow-wrap: anywhere; }
+.hx-grip { cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; color: var(--color-fg-muted); opacity: .55; margin-right: 4px; padding: 2px 2px; font-size: 12px; letter-spacing: -2px; }
+.hx-grip:hover { opacity: 1; }
+.hx-table th.hx-drag { opacity: .45; }
+.hx-table th.hx-drop-l { box-shadow: inset 3px 0 0 var(--color-fg); }
+.hx-table th.hx-drop-r { box-shadow: inset -3px 0 0 var(--color-fg); }
+body.hx-moving, body.hx-moving * { cursor: grabbing !important; user-select: none; }
+.hx-rs { position: absolute; top: 0; right: 0; width: 8px; height: 100%; cursor: col-resize; touch-action: none; }
+.hx-rs::after { content: ""; position: absolute; top: 25%; bottom: 25%; right: 3px; width: 2px; background: var(--color-border-line); border-radius: 1px; }
+.hx-rs:hover::after, .hx-rs.on::after { background: var(--color-fg-muted); }
+.hx-ed[contenteditable] { outline: 2px solid var(--color-fg); outline-offset: 2px; border-radius: 2px; cursor: text; }
+.hx-sub { display: block; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: 2px; }
+.hx-big { font-family: inherit; font-size: inherit; }
+.hx-hot { all: unset; cursor: help; border-bottom: 1px dashed var(--color-fg-muted); line-height: 1.35; }
+.hx-hot:hover, .hx-hot:focus-visible, .hx-hot[aria-expanded=true] { border-bottom-color: var(--color-fg); border-bottom-style: solid; }
+.hx-hot:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 3px; border-radius: 2px; }
+.hx-pill { display: inline-flex; align-items: baseline; gap: 6px; font-size: var(--cds-font-size-caption); }
+.hx-pill .hx-dot { flex: none; }
+.hx-badge { display: inline-block; font-size: 11px; letter-spacing: .03em; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); margin-top: 4px; }
+.hx-badge.listed { color: var(--color-ok); border-color: currentColor; }
+.hx-badge.direct { color: var(--color-fg); }
+.hx-badge.unlisted { color: var(--color-warn); border-color: currentColor; }
+.hx-link { color: inherit; font-size: var(--cds-font-size-caption); }
+.hx-btn { display: inline-block; margin-top: 0; padding: 5px 12px; border: 1px solid var(--color-border-line); border-radius: 999px; background: var(--color-panel); color: var(--color-fg); font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); text-decoration: none; white-space: nowrap; }
+.hx-btn:hover { border-color: var(--color-fg-muted); }
+.hx-btn:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.hx-edt { white-space: pre-line; }
+.hx-edt:empty { display: block; min-width: 4em; min-height: 1.2em; }
+.hx-edt:empty:hover { background: var(--color-border-line); border-radius: 2px; }
+.hx-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); padding: var(--cds-pad-md); }
+tr.hx-detail { display: none; }
+.hx-dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 14px; margin: 0; font-size: var(--cds-font-size-body); }
+.hx-dl dt { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding-top: 2px; }
+.hx-dl dd { margin: 0; min-width: 0; }
+.hx-acts { display: flex; gap: 8px; }
+.hx-dwrap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
+.hx-acts button { cursor: pointer; font: inherit; }
+@media (max-width: 640px) {
+  #offers .hx-table { width: 100% !important; table-layout: auto; }
+  #offers .hx-table col { width: auto !important; }
+  #offers .hx-table td[data-f=seat_label], #offers .hx-table th[data-field=seat_label], #offers .hx-table td[data-f=hotel], #offers .hx-table th[data-field=hotel], #offers .hx-table td[data-f=food], #offers .hx-table th[data-field=food], #offers .hx-table td[data-f=drink], #offers .hx-table th[data-field=drink], #offers .hx-table td[data-f=status], #offers .hx-table th[data-field=status], #offers .hx-table td[data-f=link], #offers .hx-table th[data-field=link], #offers .hx-table td[data-f=del], #offers .hx-table th[data-field=del] { display: none; }
+  #offers .hx-rs { display: none; }
+  #offers tr.hx-row { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  #offers tr.hx-row td[data-f=seller]::before { content: "▸"; float: left; width: 1em; margin-left: -2px; color: var(--color-fg-muted); }
+  #offers tr.hx-row.open td[data-f=seller]::before { content: "▾"; }
+  #offers tr.hx-row.open td { border-bottom: 0; padding-bottom: 4px; }
+  #offers tr.hx-detail.open { display: table-row; }
+  #offers tr.hx-detail td { padding-top: 4px; }
+  #offers tr.hx-detail .hx-hot[data-kind=seat] { white-space: normal !important; }
+  #offers .hx-table td, #offers .hx-table th { padding-left: 8px; padding-right: 8px; }
+}
+
+.hx-pop { position: absolute; z-index: 20; width: min(360px, calc(100% - 8px)); background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-md); font-size: var(--cds-font-size-caption); display: grid; gap: var(--cds-gap-sm); }
+.hx-pop h4 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.hx-pop p { margin: 0; color: var(--cds-text-secondary); }
+.hx-pop ul { margin: 0; padding-left: 1.1em; display: grid; gap: 2px; }
+.hx-pop .hx-sec { display: grid; gap: 4px; }
+.hx-pop .hx-sec b { font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 600; }
+.hx-pop svg { width: 100%; height: auto; display: block; }
+.hx-pop .hx-cap { font-size: 11px; color: var(--color-fg-muted); }
+.hx-map .stand { fill: var(--color-bg); stroke: var(--color-border-line); }
+.hx-map .blk { fill: var(--color-bg); stroke: var(--color-border-line); }
+.hx-map .on { fill: var(--hx-hl); stroke: var(--hx-hl); }
+.hx-map .soft { fill: var(--hx-hl); fill-opacity: .28; stroke: var(--hx-hl); }
+.hx-map .pitch { fill: var(--color-ok); fill-opacity: .14; stroke: var(--color-ok); stroke-opacity: .5; }
+.hx-map .line { fill: none; stroke: var(--color-ok); stroke-opacity: .5; }
+.hx-map text { fill: var(--color-fg-muted); font-size: 9px; font-family: var(--font-anthropic-sans); }
+.hx-map text.bt { font-size: 6px; fill: var(--color-fg-muted); }
+.hx-map text.bt.on { fill: var(--color-bg); stroke: none; }
+.hx-foot { display: grid; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 80ch; }
+.hx-foot h2 { margin: 0; font-size: var(--cds-font-size-heading); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.hx-foot ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
+.hx-foot a { color: inherit; }
+.hx-x { all: unset; cursor: pointer; width: 24px; height: 24px; display: inline-grid; place-items: center; border-radius: 50%; color: var(--color-fg-muted); font-size: 16px; line-height: 1; }
+.hx-x:hover { background: rgba(214, 62, 62, 0.15); color: rgb(196, 50, 50); }
+.hx-x:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+tr.hx-ask td { background: rgba(214, 62, 62, 0.12); }
+.hx-askbox { position: sticky; left: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; max-width: calc(100vw - 64px); }
+.hx-askbox span { font-weight: var(--cds-font-weight-medium); }
+.hx-askbox button { cursor: pointer; font: inherit; }
+.hx-dlg { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); color: var(--color-fg); padding: 20px; max-width: min(380px, calc(100vw - 32px)); }
+.hx-dlg::backdrop { background: rgba(0, 0, 0, 0.35); }
+.hx-dlg-t { margin: 0 0 6px; font-weight: var(--cds-font-weight-medium); }
+.hx-dlg-d { margin: 0 0 16px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.hx-dlg-b { display: flex; gap: 8px; justify-content: flex-end; }
+.hx-dlg button { cursor: pointer; }
+.hx-btn.hx-danger { background: rgb(196, 50, 50); border-color: rgb(196, 50, 50); color: #fff; }
+#hx-restore { align-self: end; cursor: pointer; }
+#hx-restore[hidden] { display: none; }
+
+/* ---- Clean table (option A) ---- */
+#dash-root { --hx-red: #c8102e; --hx-soft-line: color-mix(in srgb, var(--color-border-line) 55%, transparent); --hx-hover: color-mix(in srgb, var(--color-fg) 3.5%, transparent); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #dash-root { --hx-red: #ff5a6e; } }
+:root[data-theme="dark"] #dash-root { --hx-red: #ff5a6e; }
+.hx { font-family: Inter, var(--font-anthropic-sans), system-ui, sans-serif; font-feature-settings: "tnum" 1; }
+.hx-title { font-family: inherit; font-weight: 650; letter-spacing: -.01em; }
+.hx-eyebrow { letter-spacing: .08em; font-weight: 500; font-size: 12px; }
+.hx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.hx-bar { align-items: center; }
+.hx-seg { display: inline-flex; background: color-mix(in srgb, var(--color-fg) 6%, transparent); border-radius: 999px; padding: 3px; gap: 2px; }
+.hx-seg button { all: unset; cursor: pointer; padding: 6px 13px; border-radius: 999px; font-size: 13px; font-weight: 500; color: var(--color-fg-muted); }
+.hx-seg button.on { background: var(--color-panel); color: var(--color-fg); box-shadow: 0 1px 2px rgba(0, 0, 0, .1); }
+.hx-seg button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.hx-keys { gap: 6px 16px; }
+.hx-keys span { display: inline-flex; align-items: center; }
+.hx-group { padding: 0; gap: 0; border-radius: 14px; overflow: hidden; width: fit-content; max-width: 100%; }
+.hx-rs::after { opacity: 0; transition: opacity .15s; }
+.hx-table thead:hover .hx-rs::after, .hx-rs.on::after { opacity: 1; }
+.hx-table th.hx-nolabel .hx-grip { display: none; }
+.hx-table caption { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 600; padding: 14px 14px 4px; }
+.hx-table th { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; font-weight: 600; padding: 10px 16px 10px 14px; }
+.hx-table td { padding: 14px; border-bottom-color: var(--hx-soft-line); }
+#offers tr.hx-row:hover > td { background: var(--hx-hover); }
+#offers tr.hx-lfc > td:first-child, #offers tr.hx-detail.hx-lfc > td:first-child { box-shadow: inset 3px 0 0 var(--hx-red); }
+.hx-co { font-weight: 600; }
+.hx-hot { border-bottom: 0; text-decoration: underline dashed; text-decoration-color: color-mix(in srgb, var(--color-fg-muted) 70%, transparent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.hx-hot:hover, .hx-hot:focus-visible, .hx-hot[aria-expanded=true] { text-decoration-style: solid; text-decoration-color: currentColor; }
+.hx-lg { display: block; width: fit-content; margin-top: 3px; font-size: 13px; color: var(--color-fg-muted); }
+.hx-seat { display: block; width: fit-content; font-size: 12.5px; color: var(--color-fg-muted); text-decoration: none; line-height: 1.45; }
+.hx-seat::first-line { font-size: 14.5px; color: var(--color-fg); font-weight: 500; }
+.hx-seat:hover, .hx-seat[aria-expanded=true] { text-decoration: underline dashed; text-underline-offset: 3px; }
+.hx-table td.num { font-weight: 650; }
+.hx-pill { align-items: center; padding: 3px 10px 3px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 500; }
+.hx-pill .hx-dot { margin-right: 0; }
+.hx-pill.ok { background: color-mix(in srgb, var(--color-ok) 13%, transparent); color: var(--color-ok); }
+.hx-pill.warn { background: color-mix(in srgb, var(--color-warn) 15%, transparent); color: var(--color-warn); }
+.hx-pill.muted { background: color-mix(in srgb, var(--color-fg) 6%, transparent); color: var(--color-fg-muted); }
+.hx-pill.muted .hx-dot { background: var(--color-fg-muted); opacity: .55; }
+td[data-f=status] { font-size: 13px; color: var(--color-fg-muted); }
+.hx-btn { padding: 6px 14px; font-weight: 550; }
+.hx-x { width: 28px; height: 28px; font-size: 18px; }
+td[data-f=link], td[data-f=del] { vertical-align: top; padding-top: 10px; }
+.hx-dl dt { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; font-weight: 600; padding-top: 4px; }
+@media (max-width: 640px) {
+  .hx-group { width: auto; }
+  #offers .hx-table td { padding: 13px 12px; }
+  #offers tr.hx-row td[data-f=seller]::before { content: "▶"; font-size: 10px; width: 14px; margin-top: 3px; transition: transform .15s; }
+  #offers tr.hx-row.open td[data-f=seller]::before { content: "▶"; transform: rotate(90deg); }
+  #offers .hx-lg { margin-left: 14px; }
+  #offers tr.hx-row.open td { padding-bottom: 6px; }
+  #offers tr.hx-detail td { padding: 4px 12px 16px 26px; }
+  #offers tr.hx-detail .hx-seat { font-size: 14.5px; color: var(--color-fg); }
+}
+/* ---- Colour aids: zebra rows, stand colours ---- */
+#dash-root { --hx-zebra: color-mix(in srgb, var(--color-fg) 2.6%, transparent); --hx-head: color-mix(in srgb, var(--color-fg) 3.5%, transparent); --hx-kd: #2f6fb0; --hx-main: #8a4fb8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #dash-root { --hx-kd: #6aa8ea; --hx-main: #c193e8; --hx-zebra: color-mix(in srgb, var(--color-fg) 4%, transparent); } }
+:root[data-theme="dark"] #dash-root { --hx-kd: #6aa8ea; --hx-main: #c193e8; --hx-zebra: color-mix(in srgb, var(--color-fg) 4%, transparent); }
+.hx-table thead th { background: var(--hx-head); }
+#offers tr.hx-alt > td { background: var(--hx-zebra); }
+#offers tr.hx-row:hover > td { background: color-mix(in srgb, var(--color-fg) 6%, transparent); }
+.hx-seat[data-stand] { border-left: 3px solid var(--hx-st, transparent); padding-left: 8px; }
+.hx-seat[data-stand=KD] { --hx-st: var(--hx-kd); }
+.hx-seat[data-stand=MAIN] { --hx-st: var(--hx-main); }
+.hx-sq { display: inline-block; width: 3px; height: 12px; border-radius: 1px; margin-right: 7px; }
+.hx-sq.kd { background: var(--hx-kd); } .hx-sq.main { background: var(--hx-main); }
+.hx-kd:first-of-type { margin-left: 8px; }
+/* ---- Phone: make popup triggers look tappable ---- */
+@media (max-width: 640px) {
+  #offers .hx-lg, #offers tr.hx-detail .hx-seat { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 9px; border-radius: 999px; text-decoration: none; background: color-mix(in srgb, var(--color-fg) 6%, transparent); border: 1px solid color-mix(in srgb, var(--color-fg) 10%, transparent); line-height: 1.3; }
+  #offers .hx-lg { margin-top: 6px; color: var(--color-fg); font-size: 13px; }
+  #offers tr.hx-detail .hx-seat { font-size: 14px; }
+  #offers .hx-lg::after, #offers tr.hx-detail .hx-seat::after { content: ""; width: 14px; height: 14px; flex: none; background: currentColor; opacity: .6; -webkit-mask: var(--hx-ic) center / contain no-repeat; mask: var(--hx-ic) center / contain no-repeat; }
+  #offers .hx-lg { --hx-ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ccircle%20cx%3D%278%27%20cy%3D%278%27%20r%3D%276.5%27%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%271.6%27/%3E%3Crect%20x%3D%277.2%27%20y%3D%277%27%20width%3D%271.6%27%20height%3D%274.6%27%20rx%3D%27.8%27/%3E%3Ccircle%20cx%3D%278%27%20cy%3D%274.9%27%20r%3D%271%27/%3E%3C/svg%3E"); }
+  #offers tr.hx-detail .hx-seat { --hx-ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Cpath%20d%3D%27M8%201.5a4.6%204.6%200%200%200-4.6%204.6c0%203.3%204.6%208.4%204.6%208.4s4.6-5.1%204.6-8.4A4.6%204.6%200%200%200%208%201.5Zm0%206.5a1.9%201.9%200%201%201%200-3.8%201.9%201.9%200%200%201%200%203.8Z%27/%3E%3C/svg%3E"); }
+  #offers .hx-lg:active, #offers tr.hx-detail .hx-seat:active, #offers .hx-lg[aria-expanded=true], #offers tr.hx-detail .hx-seat[aria-expanded=true] { background: color-mix(in srgb, var(--color-fg) 12%, transparent); }
+  #offers tr.hx-detail .hx-seat[data-stand] { border-left: 1px solid color-mix(in srgb, var(--color-fg) 10%, transparent); padding-left: 10px; }
+  #offers tr.hx-detail .hx-seat[data-stand]::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--hx-st); flex: none; }
+}
+/* ---- Liverpool red palette (soft) ---- */
+#dash-root { --color-bg: #f6f5fa; --color-panel: #ffffff; --color-border-line: #e2e0ec; --color-fg-muted: #67657d;
+  --hx-page: #f6f5fa; --hx-accent: #41436a; --hx-accent2: #984063; --hx-head: #ecebf4; --hx-zebra: #f8f7fb; --hx-hov: #efedf6; --hx-segbg: #e9e7f2;
+  --hx-kd: #984063; --hx-main: #fe9677; --hx-red: #f64668; --hx-hot: #f64668; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #dash-root { --color-bg: #1d2738; --color-panel: #243046; --color-border-line: #3a4864; --color-fg-muted: #a7afc3;
+  --hx-page: #1d2738; --hx-accent: #fe9677; --hx-accent2: #f8738c; --hx-head: #2c3953; --hx-zebra: #28354c; --hx-hov: #33415d; --hx-segbg: #2c3953;
+  --hx-kd: #f64668; --hx-main: #fe9677; --hx-red: #f64668; --hx-hot: #fe9677; } }
+:root[data-theme="dark"] #dash-root { --color-bg: #1d2738; --color-panel: #243046; --color-border-line: #3a4864; --color-fg-muted: #a7afc3;
+  --hx-page: #1d2738; --hx-accent: #fe9677; --hx-accent2: #f8738c; --hx-head: #2c3953; --hx-zebra: #28354c; --hx-hov: #33415d; --hx-segbg: #2c3953;
+  --hx-kd: #f64668; --hx-main: #fe9677; --hx-red: #f64668; --hx-hot: #fe9677; }
+#dash-root { background: var(--hx-page); }
+.hx-eyebrow { color: var(--hx-accent2); }
+.hx-title { color: var(--color-fg); }
+.hx-seg { background: var(--hx-segbg); }
+.hx-seg button.on { color: var(--hx-accent2); font-weight: 600; }
+.hx-group { border-color: var(--color-border-line); }
+.hx-table thead th { background: var(--hx-head); color: var(--hx-accent); border-bottom-color: var(--color-border-line); }
+.hx-table caption { color: var(--hx-accent); }
+.hx-grip { color: var(--hx-accent); }
+#offers tr.hx-alt > td { background: var(--hx-zebra); }
+#offers tr.hx-row:hover > td { background: var(--hx-hov); }
+.hx-btn { border-color: color-mix(in srgb, var(--hx-accent) 28%, var(--color-border-line)); }
+.hx-btn:hover { border-color: var(--hx-hot); color: var(--hx-hot); }
+.hx-hot { text-decoration-color: color-mix(in srgb, var(--hx-accent2) 55%, transparent); }
+.hx-foot h2 { color: var(--hx-accent); }
+/* ---- Banner ---- */
+.hx-banner { margin: 0; border-radius: 14px; overflow: hidden; aspect-ratio: 2172 / 724; max-height: 420px; background: var(--hx-head); }
+.hx-banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+/* ---- Food / Drink dots ---- */
+#dash-root { --hx-yes: #2e9d63; --hx-no: #e0475f; --hx-warn: #e8b323; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #dash-root { --hx-yes: #5fd39a; --hx-no: #ff6b7f; --hx-warn: #f2c14e; } }
+:root[data-theme="dark"] #dash-root { --hx-yes: #5fd39a; --hx-no: #ff6b7f; --hx-warn: #f2c14e; }
+.hx-table td.hx-mini, .hx-table th.hx-mini { text-align: center; }
+.hx-fd { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 4px; }
+.hx-fd:hover { background: color-mix(in srgb, var(--color-fg) 7%, transparent); }
+.hx-fd:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 1px; }
+.hx-fd i, .hx-fdk { display: inline-block; width: 11px; height: 11px; border-radius: 50%; flex: none; }
+.hx-fd.yes i, .hx-fdk.yes { background: var(--hx-yes); }
+.hx-fd.no i, .hx-fdk.no { background: var(--hx-no); }
+.hx-fd.warn i, .hx-fdk.warn { background: var(--hx-warn); }
+.hx-fdk { width: 9px; height: 9px; margin-right: 6px; }
+.hx-fd span { font-size: 13.5px; color: var(--color-fg); text-align: left; }
+.hx-dl .hx-fd { padding: 0; }
+/* ---- Fixed, content-sized columns ---- */
+#offers .hx-table { table-layout: auto; width: auto; }
+#offers .hx-table col { width: auto; }
+#offers .hx-table th { padding-right: 14px; overflow: visible; }
+#offers .hx-table td { overflow-wrap: normal; }
+#offers .hx-table td[data-f=seller], #offers .hx-table td[data-f=seat_label], #offers .hx-table td[data-f=pp_usd], #offers .hx-table td[data-f=link] { white-space: nowrap; }
+#offers .hx-table td.hx-mini, #offers .hx-table th.hx-mini { padding-left: 10px; padding-right: 10px; }
+#offers .hx-table td[data-f=del] { padding-left: 4px; }
+#offers .hx-table td[data-f=status] { min-width: 150px; max-width: 240px; }
+.hx-hpill { all: unset; display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 500; cursor: pointer; white-space: nowrap; }
+.hx-hpill.ok { background: color-mix(in srgb, var(--color-ok) 13%, transparent); color: var(--color-ok); }
+.hx-hpill.warn { background: color-mix(in srgb, var(--color-warn) 15%, transparent); color: var(--color-warn); }
+.hx-hpill.muted { background: color-mix(in srgb, var(--color-fg) 6%, transparent); color: var(--color-fg-muted); }
+.hx-hpill:hover { box-shadow: 0 0 0 1px currentColor; }
+.hx-hpill:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.hx-hpill .hx-dot { margin-right: 0; }
+.hx-hpill .hx-dot.muted { background: var(--color-fg-muted); opacity: .55; }
+</style>
+
+
+<div class="hx">
+  <figure class="hx-banner" id="banner"><img src="assets/anfield-banner-wide.jpg" alt="Illustration of a red Liverpool double-decker bus outside Anfield" width="2172" height="724" decoding="async"></figure>
+  <header class="hx-top" id="top">
+    <p class="hx-eyebrow">Premier League · Sat 10 Apr 2027 · 3:00pm BST · Anfield</p>
+    <h1 class="hx-title">Liverpool v Newcastle Tickets</h1>
+  </header>
+
+  <div class="hx-bar" id="controls">
+    <div class="hx-seg" role="group" aria-label="Organize by">
+      <button type="button" data-v="price" class="on">Price</button><button type="button" data-v="seller">Company</button><button type="button" data-v="lounge">Lounge</button><button type="button" data-v="stand">Seating</button>
+    </div>
+    <label class="hx-field hx-sr" for="hx-group">Organize by
+      <select id="hx-group" tabindex="-1">
+        <option value="price" selected>Price</option>
+        <option value="seller">Company</option>
+        <option value="lounge">Lounge</option>
+        <option value="stand">Seating area</option>
+      </select>
+    </label>
+  </div>
+
+
+  <div class="hx-keys">
+    <span><i class="hx-fdk yes"></i>Included</span>
+    <span><i class="hx-fdk warn"></i>Additional Cost</span>
+    <span><i class="hx-fdk no"></i>Not included</span>
+    <span class="hx-kd"><i class="hx-sq kd"></i>Kenny Dalglish Stand</span>
+    <span class="hx-kd"><i class="hx-sq main"></i>Main Stand</span>
+  </div>
+
+  <div class="hx-board" id="offers" data-draw="offers" data-source="offers prices lounges"></div>
+
+</div>
+
+<script>
+dash.calc('prices', {
+  inputs: ['offers', 'fx'],
+  title: 'Prices in US dollars',
+  description: 'Each listed price per person in USD: adds VAT where prices exclude it and any booking fee, then converts pounds at the GBP/USD rate.',
+  fn: (offers, fx) => {
+    const rate = Number(fx[0].rate);
+    return offers.map((o) => {
+      const listed = o.price === null || o.price === '' || o.price === undefined ? null : Number(o.price);
+      const local = listed === null ? null : listed * (String(o.vat_excluded) === 'true' ? 1.2 : 1) * (1 + Number(o.fee_pct || 0) / 100);
+      const usd = local === null || o.currency === 'NOK' ? null : (o.currency === 'GBP' ? local * rate : local);
+      return { id: o.id, pp_usd: usd === null ? null : Math.round(usd) };
+    });
+  },
+});
+</script>
+
+<script>
+(() => {
+  const usd = (n) => '$' + d3.format(',')(n);
+  const ok = (id) => dash.data(id).status === 'ok';
+  const rows = (id) => (ok(id) ? dash.data(id).data : []);
+  const one = (id, f, fmt) => (el) => {
+    const r = rows(id)[0];
+    el.textContent = r && r[f] !== null && r[f] !== undefined ? (fmt ? fmt(r[f]) : String(r[f])) : '—';
+  };
+})();
+</script>
+
+<script>
+(() => {
+  const state = (window.hxState = window.hxState || { group: 'price' });
+  const bind = (sel, ev, fn) => document.querySelectorAll(sel).forEach((el) => el.addEventListener(ev, () => { fn(el); dash.draw('offers'); }));
+  bind('#hx-group', 'change', (el) => { state.group = el.value; });
+  const sel = document.getElementById('hx-group');
+  const syncSeg = () => document.querySelectorAll('.hx-seg button').forEach((x) => { const on = x.dataset.v === sel.value; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
+  document.querySelectorAll('.hx-seg button').forEach((x) => x.addEventListener('click', () => { sel.value = x.dataset.v; sel.dispatchEvent(new Event('change')); syncSeg(); }));
+  syncSeg();
+  bind('#hx-restore', 'click', () => { try { localStorage.removeItem('hx:deleted'); } catch (e) {} });
+})();
+</script>
+
+<script>
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+  const STAND_NAME = { MAIN: 'Main Stand', KD: 'Sir Kenny Dalglish Stand', ARS: 'Anfield Road Stand', KOP: 'The Kop', OFF: 'Off-site venue' };
+  const STAND_ORDER = { MAIN: 1, KD: 2, ARS: 3, KOP: 4, OFF: 5 };
+  const LISTING_CLASS = { 'LFC-listed seller': 'listed', 'Liverpool FC direct': 'direct', 'Not on LFC list': 'unlisted' };
+  const usd = (n) => '$' + d3.format(',')(n);
+
+  // Stadium geometry: pitch in the middle; Anfield Road left, Kop right, Kenny Dalglish top, Main bottom.
+  const range = (p, a, b) => d3.range(a, b + 1).map((i) => p + i);
+  const BANDS = [
+    { stand: 'KD', tier: 'upper', x: 96, y: 22, w: 168, h: 22, dir: 'h', ids: range('CE', 1, 9) },
+    { stand: 'KD', tier: 'lower', x: 96, y: 48, w: 168, h: 18, dir: 'h', ids: [] },
+    { stand: 'MAIN', tier: 'lower', x: 96, y: 174, w: 168, h: 18, dir: 'h', ids: range('L', 8, 20) },
+    { stand: 'MAIN', tier: 'middle', x: 96, y: 196, w: 168, h: 16, dir: 'h', ids: range('M', 1, 9) },
+    { stand: 'MAIN', tier: 'upper', x: 96, y: 216, w: 168, h: 14, dir: 'h', ids: [] },
+    { stand: 'ARS', tier: 'lower', x: 72, y: 70, w: 16, h: 100, dir: 'v', ids: [] },
+    { stand: 'ARS', tier: 'middle', x: 50, y: 70, w: 18, h: 100, dir: 'v', ids: range('AM', 1, 8) },
+    { stand: 'ARS', tier: 'upper', x: 28, y: 70, w: 18, h: 100, dir: 'v', ids: range('AU', 1, 8) },
+    { stand: 'KOP', tier: 'all', x: 272, y: 70, w: 44, h: 100, dir: 'v', ids: [] },
+  ];
+  const el = (name, attrs, parent) => { const n = document.createElementNS(NS, name); Object.entries(attrs).forEach(([k, v]) => n.setAttribute(k, v)); if (parent) parent.appendChild(n); return n; };
+  const text = (parent, x, y, s, attrs) => { const t = el('text', Object.assign({ x, y, 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, attrs || {}), parent); t.textContent = s; return t; };
+
+  // hl: {stand, tier, blocks[]} or {stand} for a whole-stand (lounge location) highlight
+  function stadium(hl) {
+    const svg = el('svg', { viewBox: '0 0 344 252', width: '100%', role: 'img', class: 'hx-map' });
+    svg.style.setProperty('--hx-hl', dash.colors[0]);
+    el('rect', { x: 96, y: 70, width: 168, height: 100, rx: 3, class: 'pitch' }, svg);
+    el('line', { x1: 180, y1: 70, x2: 180, y2: 170, class: 'line' }, svg);
+    el('circle', { cx: 180, cy: 120, r: 14, class: 'line' }, svg);
+    el('rect', { x: 96, y: 98, width: 22, height: 44, class: 'line' }, svg);
+    el('rect', { x: 242, y: 98, width: 22, height: 44, class: 'line' }, svg);
+    const blocks = new Set((hl && hl.blocks) || []);
+    BANDS.forEach((b) => {
+      const standOn = hl && hl.stand === b.stand;
+      const tierOn = standOn && (hl.whole || b.tier === hl.tier || b.tier === 'all');
+      const anyBlockHere = b.ids.some((id) => blocks.has(id));
+      if (!b.ids.length) {
+        el('rect', { x: b.x, y: b.y, width: b.w, height: b.h, rx: 2, class: tierOn ? (hl.whole ? 'soft' : 'on') : 'stand' }, svg);
+        return;
+      }
+      const n = b.ids.length;
+      b.ids.forEach((id, i) => {
+        const g = b.dir === 'h'
+          ? { x: b.x + (b.w / n) * i, y: b.y, w: b.w / n, h: b.h }
+          : { x: b.x, y: b.y + (b.h / n) * i, w: b.w, h: b.h / n };
+        let cls = 'blk';
+        if (tierOn && blocks.has(id)) cls = 'blk on';
+        else if (tierOn && (hl.whole || !anyBlockHere)) cls = 'blk soft';
+        el('rect', { x: g.x + 0.5, y: g.y + 0.5, width: g.w - 1, height: g.h - 1, rx: 1.5, class: cls }, svg);
+        text(svg, g.x + g.w / 2, g.y + g.h / 2, id, { class: cls.includes('on') ? 'bt on' : 'bt' });
+      });
+    });
+    text(svg, 180, 11, 'Sir Kenny Dalglish Stand');
+    text(svg, 180, 242, 'Main Stand');
+    text(svg, 14, 120, 'Anfield Road', { transform: 'rotate(-90 14 120)' });
+    text(svg, 330, 120, 'The Kop', { transform: 'rotate(90 330 120)' });
+    return svg;
+  }
+
+  const list = (v) => (Array.isArray(v) ? v : typeof v === 'string' && v.trim().startsWith('[') ? JSON.parse(v) : v ? [String(v)] : []);
+  const blocksOf = (o) => String(o.blocks || '').split(',').map((s) => s.trim()).filter(Boolean);
+
+  function popSeat(pop, o) {
+    pop.replaceChildren();
+    const h = document.createElement('h4'); h.textContent = o.seat_label; pop.appendChild(h);
+    const p = document.createElement('p');
+    p.textContent = STAND_NAME[o.stand] + ', ' + o.tier + ' tier' + (blocksOf(o).length ? '' : '. The seller doesn’t name a block, so the whole tier is shaded.');
+    pop.appendChild(p);
+    pop.appendChild(stadium({ stand: o.stand, tier: o.tier, blocks: blocksOf(o) }));
+    const c = document.createElement('div'); c.className = 'hx-cap'; c.textContent = 'Block positions are approximate. Pitch runs left to right; the Kop is on the right.'; pop.appendChild(c);
+  }
+
+  function popLounge(pop, o, l) {
+    pop.replaceChildren();
+    const h = document.createElement('h4'); h.textContent = o.lounge; pop.appendChild(h);
+    if (!l) { const p = document.createElement('p'); p.textContent = 'No lounge details found.'; pop.appendChild(p); return; }
+    const p = document.createElement('p'); p.textContent = l.where; pop.appendChild(p);
+    const loc = l.stand === 'OFF' ? null : stadium({ stand: l.stand, whole: true });
+    if (loc) pop.appendChild(loc);
+    const secs = [
+      ['Food', list(l.food)],
+      ['Drinks', list(l.drinks)],
+      ['Your seat', [l.seat]],
+      ['Also included', list(l.extras).concat(o.seller_extras ? [o.seller_extras + ' (this seller)'] : [])],
+      ['Hotel', [o.hotel_detail || o.hotel]],
+      ['Timing', [l.access]],
+    ];
+    secs.forEach(([name, items]) => {
+      items = items.filter(Boolean);
+      if (!items.length) return;
+      const s = document.createElement('div'); s.className = 'hx-sec';
+      const b = document.createElement('b'); b.textContent = name; s.appendChild(b);
+      const ul = document.createElement('ul');
+      items.forEach((t) => { const li = document.createElement('li'); li.textContent = t; ul.appendChild(li); });
+      s.appendChild(ul); pop.appendChild(s);
+    });
+    const a = document.createElement('a'); a.href = l.photos; a.target = '_blank'; a.rel = 'noopener'; a.className = 'hx-link'; a.textContent = 'Photos and full details ↗';
+    pop.appendChild(a);
+  }
+
+  function place(board, pop, target) {
+    const br = board.getBoundingClientRect(); const tr = target.getBoundingClientRect();
+    pop.hidden = false;
+    const pw = pop.offsetWidth; const ph = pop.offsetHeight;
+    let left = tr.left - br.left; left = Math.max(4, Math.min(left, br.width - pw - 4));
+    let top = tr.bottom - br.top + 6;
+    if (tr.bottom + ph + 12 > window.innerHeight && tr.top - br.top - ph - 6 > 0) top = tr.top - br.top - ph - 6;
+    pop.style.left = left + 'px'; pop.style.top = top + 'px';
+  }
+
+  // Always cheapest first; packages without a price go last.
+  function sortRows(list, prices) {
+    const pp = (o) => { const v = prices.get(o.id); return v && v.pp_usd !== null && v.pp_usd !== undefined ? v.pp_usd : Infinity; };
+    return list.slice().sort((a, b) => (pp(a) === pp(b) ? 0 : pp(a) < pp(b) ? -1 : 1) || a.seller.localeCompare(b.seller) || a.lounge.localeCompare(b.lounge));
+  }
+
+  const COLS = [
+    { label: 'Company', field: 'seller' },
+    { label: 'Seating', field: 'seat_label' },
+    { label: 'Cost', field: 'pp_usd', source: 'prices', num: true },
+    { label: 'Hotel', field: 'hotel', mini: true },
+    { label: 'Food', field: 'food', mini: true },
+    { label: 'Drink', field: 'drink', mini: true },
+    { label: 'Notes', field: 'status' },
+    { label: '', field: 'link' },
+    { label: '', field: 'del' },
+  ];
+
+  dash.draw('offers', {
+    mount(board) {
+      const pop = document.createElement('div'); pop.className = 'hx-pop'; pop.hidden = true; pop.setAttribute('role', 'tooltip');
+      const wrap = document.createElement('div'); wrap.className = 'hx-groups'; wrap.style.display = 'grid'; wrap.style.gap = 'var(--cds-gap-lg)';
+      board.append(wrap, pop);
+      let pinned = null;
+      const show = (btn) => {
+        const o = board._byId && board._byId.get(btn.dataset.offer); if (!o) return;
+        if (btn.dataset.kind === 'seat') popSeat(pop, o); else popLounge(pop, o, board._lounges.get(o.lounge));
+        board.querySelectorAll('.hx-hot[aria-expanded=true]').forEach((b) => b.setAttribute('aria-expanded', 'false'));
+        btn.setAttribute('aria-expanded', 'true');
+        place(board, pop, btn);
+      };
+      const hide = () => { pop.hidden = true; pinned = null; board.querySelectorAll('.hx-hot[aria-expanded=true]').forEach((b) => b.setAttribute('aria-expanded', 'false')); };
+      board.addEventListener('mouseover', (e) => { const b = e.target.closest('.hx-hot'); if (b && !pinned) show(b); });
+      board.addEventListener('mouseout', (e) => { const b = e.target.closest('.hx-hot'); if (b && !pinned && !b.contains(e.relatedTarget) && !pop.contains(e.relatedTarget)) hide(); });
+      pop.addEventListener('mouseleave', () => { if (!pinned) hide(); });
+      board.addEventListener('focusin', (e) => { const b = e.target.closest('.hx-hot'); if (b) show(b); });
+      board.addEventListener('click', (e) => {
+        const b = e.target.closest('.hx-hot');
+        if (b) { if (pinned === b) { hide(); } else { pinned = b; show(b); } return; }
+        if (!pop.contains(e.target)) hide();
+      });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hide(); });
+      return { wrap, pop, hide };
+    },
+    update(board, made) {
+      const store = {
+        // Saved in this browser; kept in memory too so changes survive redraws if storage is blocked.
+        get(k, d) { const mem = (window.__hxMem = window.__hxMem || {}); try { const v = localStorage.getItem('hx:' + k); if (v !== null) return JSON.parse(v); } catch (e) {} return k in mem ? JSON.parse(mem[k]) : d; },
+        set(k, v) { (window.__hxMem = window.__hxMem || {})[k] = JSON.stringify(v); try { localStorage.setItem('hx:' + k, JSON.stringify(v)); } catch (e) {} },
+      };
+      const DEFAULT_W = [220, 150, 110, 180, 92, 92, 220, 110, 48];
+      let widths = store.get('widths', DEFAULT_W);
+      if (!Array.isArray(widths) || widths.length !== DEFAULT_W.length) widths = DEFAULT_W.slice();
+      // Columns are fixed in this order now (moving and resizing were removed).
+      let order = null;
+      if (!Array.isArray(order) || order.length !== COLS.length || [...order].sort((a, b) => a - b).some((v, i) => v !== i)) order = COLS.map((_, i) => i);
+      const edits = store.get('edits', {});
+      const deleted = new Set(store.get('deleted', []));
+      const restore = document.getElementById('hx-restore');
+      if (restore) { restore.hidden = !deleted.size; restore.textContent = 'Restore ' + deleted.size + ' deleted ' + (deleted.size === 1 ? 'row' : 'rows'); }
+      // Ask inline, in place of the row, so it works the same on phones and desktops.
+      const askDelete = (o, tr) => {
+        const prev = document.querySelector('#offers tr.hx-ask'); if (prev && prev._cancel) prev._cancel();
+        const ask = document.createElement('tr'); ask.className = 'hx-ask';
+        const td = document.createElement('td'); td.colSpan = COLS.length;
+        const box = document.createElement('div'); box.className = 'hx-askbox'; box.setAttribute('role', 'alertdialog');
+        const msg = document.createElement('span'); msg.textContent = 'Delete ' + o.seller + ' · ' + o.lounge + '?';
+        const no = document.createElement('button'); no.type = 'button'; no.className = 'hx-btn'; no.textContent = 'Cancel';
+        const yes = document.createElement('button'); yes.type = 'button'; yes.className = 'hx-btn hx-danger'; yes.textContent = 'Delete';
+        box.append(msg, no, yes); td.appendChild(box); ask.appendChild(td);
+        if (tr._det) tr._det.style.display = 'none';
+        ask._cancel = () => { ask.replaceWith(tr); if (tr._det) tr._det.style.display = ''; };
+        no.addEventListener('click', (e) => { e.stopPropagation(); ask._cancel(); });
+        yes.addEventListener('click', (e) => { e.stopPropagation(); deleted.add(o.id); store.set('deleted', [...deleted]); dash.draw('offers'); });
+        tr.replaceWith(ask); no.focus({ preventScroll: true });
+      };
+      const applyWidths = () => document.querySelectorAll('#offers .hx-table').forEach((t) => { if (true) return;
+        t.style.width = widths.reduce((a, b) => a + b, 0) + 'px';
+        t.querySelectorAll('col').forEach((c, k) => { c.style.width = widths[order[k]] + 'px'; });
+      });
+      // Double-click any cell text to edit it; Enter adds a line, clicking away or Ctrl/Cmd+Enter saves, Escape cancels.
+      const editable = (el, key, original) => {
+        if (edits[key] !== undefined) el.textContent = edits[key]; else el.textContent = original;
+        el.title = 'Double-click to edit'; el.classList.add('hx-edt'); el._ek = key;
+        el.addEventListener('dblclick', (e) => {
+          e.stopPropagation();
+          const before = el.textContent;
+          el.classList.add('hx-ed'); el.contentEditable = 'plaintext-only';
+          if (el.contentEditable !== 'plaintext-only') el.contentEditable = 'true';
+          el.focus(); const r = document.createRange(); r.selectNodeContents(el); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+          const done = (save) => {
+            el.removeEventListener('blur', onBlur); el.removeEventListener('keydown', onKey); el.removeEventListener('beforeinput', onInput);
+            el.classList.remove('hx-ed'); el.removeAttribute('contenteditable');
+            if (!save) { el.textContent = before; return; }
+            const v = el.textContent.replace(/\u200b/g, '').replace(/[ \t]+\n/g, '\n').trim();
+            if (v === original) { delete edits[key]; el.textContent = original; } else { edits[key] = v; el.textContent = v; }
+            store.set('edits', edits);
+            if (key.endsWith('|pp')) { dash.draw('offers'); return; }
+            document.querySelectorAll('#offers .hx-edt').forEach((x) => { if (x !== el && x._ek === key) x.textContent = el.textContent; });
+          };
+          const onBlur = () => done(true);
+          const onKey = (ev) => { if (ev.key === 'Enter' && (ev.ctrlKey || ev.metaKey)) { ev.preventDefault(); done(true); }
+            else if (ev.key === 'Enter') { ev.preventDefault(); insertBreak(); }
+            else if (ev.key === 'Escape') { ev.stopPropagation(); done(false); } ev.stopPropagation(); };
+          // Phone keyboards send the return key as an input event rather than a key press.
+          const onInput = (ev) => { if (ev.inputType === 'insertParagraph' || ev.inputType === 'insertLineBreak') { ev.preventDefault(); insertBreak(); } };
+          const insertBreak = () => {
+              // Insert a real line break as text (a zero-width space keeps a trailing break visible; it's stripped on save).
+              const sel2 = getSelection(); if (!sel2.rangeCount) return;
+              const r = sel2.getRangeAt(0); r.deleteContents();
+              const t = document.createRange(); t.selectNodeContents(el); t.setStart(r.endContainer, r.endOffset);
+              const n = document.createTextNode(t.toString() === '' ? '\n\u200b' : '\n'); r.insertNode(n);
+              const c = document.createRange(); c.setStart(n, 1); c.collapse(true); sel2.removeAllRanges(); sel2.addRange(c);
+          };
+          el.addEventListener('blur', onBlur); el.addEventListener('keydown', onKey); el.addEventListener('beforeinput', onInput);
+        });
+      };
+      made.hide();
+      // Read the visible controls each time, so the list always matches what the dropdown shows.
+      const ctl = (id) => document.getElementById(id);
+      const st = {
+        group: ctl('hx-group') ? ctl('hx-group').value : 'price',
+      };
+      const ready = ['offers', 'prices', 'lounges'].every((id) => dash.data(id).status === 'ok');
+      if (!ready) { made.wrap.replaceChildren(); const d = document.createElement('div'); d.className = 'hx-empty'; d.textContent = '—'; made.wrap.appendChild(d); return; }
+      const offers = dash.data('offers').data;
+      const prices = new Map(dash.data('prices').data.map((p) => [p.id, p]));
+      board._byId = new Map(offers.map((o) => [o.id, o]));
+      board._lounges = new Map(dash.data('lounges').data.map((l) => [l.lounge, l]));
+      let shown = offers.filter((o) => !deleted.has(o.id));
+      // Sort by the cost as shown, including any cost you've edited (digits in the text, e.g. "$1,250" or "from $700").
+      const sortPrices = new Map(prices);
+      shown.forEach((o) => {
+        const ed = edits[o.id + '|pp'];
+        if (typeof ed !== 'string') return;
+        const m = ed.replace(/,/g, '').match(/\d+(\.\d+)?/);
+        sortPrices.set(o.id, { id: o.id, pp_usd: m ? Number(m[0]) : null });
+      });
+      shown = sortRows(shown, sortPrices);
+
+      const keyOf = { price: () => 'All packages, cheapest first', seller: (o) => o.seller, lounge: (o) => o.lounge, stand: (o) => STAND_NAME[o.stand] }[st.group] || (() => 'All packages, cheapest first');
+      // Each section is already cheapest-first because `shown` is sorted by price before grouping.
+      const groups = d3.groups(shown, keyOf);
+      if (st.group === 'stand') groups.sort((a, b) => STAND_ORDER[a[1][0].stand] - STAND_ORDER[b[1][0].stand]);
+      else if (st.group !== 'price') groups.sort((a, b) => a[0].localeCompare(b[0]));
+
+      made.wrap.replaceChildren();
+      if (!groups.length) { const d = document.createElement('div'); d.className = 'hx-empty'; d.textContent = 'All rows deleted. Use "Restore deleted rows" to bring them back.'; made.wrap.appendChild(d); return; }
+      groups.forEach(([name, items]) => {
+        const card = document.createElement('div'); card.className = 'hx-group';
+        const sc = document.createElement('div'); sc.className = 'hx-scroll';
+        const t = document.createElement('table'); t.className = 'hx-table';
+        t.dataset.source = 'offers'; t.dataset.rowKey = 'id';
+        const cap = document.createElement('caption'); cap.textContent = (st.group === 'price' ? 'Cheapest first' : name) + ' · ' + items.length + (items.length === 1 ? ' package' : ' packages'); t.appendChild(cap);
+        const thead = document.createElement('thead'); const hr = document.createElement('tr');
+        COLS.forEach((c) => {
+          const th = document.createElement('th'); th.dataset.field = c.field; if (c.source) th.dataset.source = c.source;
+          if (c.num) th.classList.add('num'); if (c.cls) th.classList.add(c.cls);
+          th.textContent = c.label; if (c.mini) th.classList.add('hx-mini'); if (!c.label) th.classList.add('hx-nolabel');
+          hr.appendChild(th);
+        });
+        COLS.forEach((c, i) => {
+          const th = hr.children[i];
+          const h = document.createElement('span'); h.className = 'hx-rs'; h.setAttribute('aria-hidden', 'true');
+          h.addEventListener('pointerdown', (e) => {
+            e.preventDefault(); h.setPointerCapture(e.pointerId); h.classList.add('on');
+            const x0 = e.clientX, w0 = widths[i];
+            const mv = (ev) => { widths[i] = Math.max(36, Math.round(w0 + ev.clientX - x0)); applyWidths(); };
+            const up = () => { h.classList.remove('on'); h.removeEventListener('pointermove', mv); h.removeEventListener('pointerup', up); h.removeEventListener('pointercancel', up); store.set('widths', widths); };
+            h.addEventListener('pointermove', mv); h.addEventListener('pointerup', up); h.addEventListener('pointercancel', up);
+          });
+          // resize handle removed
+          // Drag the ⠿ grip to move a column left or right.
+          const g = document.createElement('span'); g.className = 'hx-grip'; g.textContent = '⠿'; g.title = 'Drag to move column'; g.setAttribute('aria-hidden', 'true');
+          g.addEventListener('pointerdown', (e) => {
+            e.preventDefault(); g.setPointerCapture(e.pointerId);
+            document.body.classList.add('hx-moving'); th.classList.add('hx-drag');
+            let target = null;
+            const clear = () => hr.querySelectorAll('th').forEach((x) => x.classList.remove('hx-drop-l', 'hx-drop-r'));
+            const mv = (ev) => {
+              clear(); target = null;
+              const ths = [...hr.children];
+              for (let k = 0; k < ths.length; k++) {
+                const r = ths[k].getBoundingClientRect();
+                if (ev.clientX >= r.left && ev.clientX < r.right) { const left = ev.clientX < r.left + r.width / 2; target = { k, left }; ths[k].classList.add(left ? 'hx-drop-l' : 'hx-drop-r'); break; }
+              }
+            };
+            const up = () => {
+              g.removeEventListener('pointermove', mv); g.removeEventListener('pointerup', up); g.removeEventListener('pointercancel', up);
+              document.body.classList.remove('hx-moving'); th.classList.remove('hx-drag'); clear();
+              if (!target) return;
+              const from = order.indexOf(i);
+              let to = target.k + (target.left ? 0 : 1);
+              if (to > from) to -= 1;
+              if (to === from) return;
+              order.splice(from, 1); order.splice(to, 0, i);
+              store.set('order', order); dash.draw('offers');
+            };
+            g.addEventListener('pointermove', mv); g.addEventListener('pointerup', up); g.addEventListener('pointercancel', up);
+          });
+          // move grip removed
+        });
+        { const hs = [...hr.children]; hr.replaceChildren(...order.map((k) => hs[k])); }
+        const cg = document.createElement('colgroup'); COLS.forEach(() => cg.appendChild(document.createElement('col'))); t.insertBefore(cg, t.firstChild.nextSibling);
+        thead.appendChild(hr); t.appendChild(thead);
+        const tb = document.createElement('tbody');
+        items.forEach((o, ri) => {
+          const tr = document.createElement('tr'); tr.className = 'hx-row' + (o.listing === 'Liverpool FC direct' ? ' hx-lfc' : '') + (ri % 2 ? ' hx-alt' : ''); tr.dataset.key = o.id;
+          const pr = prices.get(o.id) || {};
+          // Company
+          let td = document.createElement('td');
+          const name = document.createElement('div'); name.className = 'hx-co'; editable(name, o.id + '|seller', o.seller); td.appendChild(name);
+          // Lounge, as small grey text under the company
+          let b = document.createElement('button'); b.type = 'button'; b.className = 'hx-hot hx-lg'; b.dataset.kind = 'lounge'; b.dataset.offer = o.id; b.setAttribute('aria-expanded', 'false'); editable(b, o.id + '|lounge', o.lounge); td.appendChild(b);
+          tr.appendChild(td);
+          // Seats
+          td = document.createElement('td');
+          b = document.createElement('button'); b.type = 'button'; b.className = 'hx-hot'; b.dataset.kind = 'seat'; b.classList.add('hx-seat'); b.dataset.stand = o.stand; b.dataset.offer = o.id; b.setAttribute('aria-expanded', 'false'); b.style.whiteSpace = 'pre-line'; if (typeof edits[o.id + '|seat'] === 'string') edits[o.id + '|seat'] = edits[o.id + '|seat'].replace(' · ', '\n'); editable(b, o.id + '|seat', o.seat_label.replace(' · ', '\n')); td.appendChild(b);
+          tr.appendChild(td);
+          // Listed
+          // Per person
+          td = document.createElement('td'); td.className = 'num';
+          { const has = pr.pp_usd !== null && pr.pp_usd !== undefined; const s = document.createElement('span'); s.className = has ? 'hx-big' : ''; editable(s, o.id + '|pp', has ? (o.price_from ? 'from ' : '') + usd(pr.pp_usd) : (o.price_short || '—')); if (o.price_label) td.title = 'Listed: ' + o.price_label; td.appendChild(s); }
+          tr.appendChild(td);
+          // Hotel
+          td = document.createElement('td');
+          // Hotel: a dot. Click to cycle green (included) → yellow (add-on / unclear) → red (no hotel).
+          const H_ORDER = ['yes', 'warn', 'no'], H_WORD = { yes: 'Hotel included', warn: 'Hotel at additional cost', no: 'No hotel' };
+          const hOrig = o.hotel_incl === 'yes' ? 'yes' : o.hotel_incl === 'no' ? 'no' : 'warn';
+          const hs = edits[o.id + '|hstate'];
+          const hk = H_ORDER.includes(hs) ? hs : hs === 'ok' ? 'yes' : hs === 'muted' ? 'no' : hOrig;
+          const hotelPill = () => {
+            const p = document.createElement('button'); p.type = 'button'; p.className = 'hx-fd ' + hk;
+            p.title = H_WORD[hk] + (hk === hOrig ? ': ' + (o.hotel_detail || o.hotel) : '') + ' (click to change)';
+            p.setAttribute('aria-label', H_WORD[hk] + '. Click to change.');
+            p.appendChild(document.createElement('i'));
+            p.addEventListener('click', (e) => { e.stopPropagation(); const nx = H_ORDER[(H_ORDER.indexOf(hk) + 1) % 3]; if (nx === hOrig) delete edits[o.id + '|hstate']; else edits[o.id + '|hstate'] = nx; store.set('edits', edits); dash.draw('offers'); });
+            return p;
+          };
+          td.className = 'hx-mini';
+          td.appendChild(hotelPill());
+          tr.appendChild(td);
+          // Food and Drink: green dot = complimentary, red = not. Click a dot to flip it.
+          const fdDot = (k, withText) => {
+            const key = o.id + '|' + k;
+            const yes = edits[key] !== undefined ? edits[key] === 'yes' : !!o[k];
+            const bt = document.createElement('button'); bt.type = 'button'; bt.className = 'hx-fd ' + (yes ? 'yes' : 'no');
+            const note = o[k + '_note'] || '';
+            bt.title = (yes ? 'Included' : 'Not included') + (note ? ': ' + note : '') + ' (click to change)';
+            bt.setAttribute('aria-label', (k === 'food' ? 'Food ' : 'Drink ') + (yes ? 'included' : 'not included'));
+            const i = document.createElement('i'); bt.appendChild(i);
+            if (withText) { const t = document.createElement('span'); t.textContent = note || (yes ? 'Included' : 'Not included'); bt.appendChild(t); }
+            bt.addEventListener('click', (e) => { e.stopPropagation(); const nv = yes ? 'no' : 'yes'; if ((nv === 'yes') === !!o[k]) delete edits[key]; else edits[key] = nv; store.set('edits', edits); dash.draw('offers'); });
+            return bt;
+          };
+          td = document.createElement('td'); td.className = 'hx-mini'; td.appendChild(fdDot('food')); tr.appendChild(td);
+          td = document.createElement('td'); td.className = 'hx-mini'; td.appendChild(fdDot('drink')); tr.appendChild(td);
+          // Notes
+          td = document.createElement('td');
+          const stx = document.createElement('div'); editable(stx, o.id + '|status', o.status); td.appendChild(stx);
+          tr.appendChild(td);
+          // Seller page button
+          td = document.createElement('td');
+          const a = document.createElement('a'); a.href = o.link; a.target = '_blank'; a.rel = 'noopener'; a.className = 'hx-btn'; a.textContent = 'Seller ↗'; td.appendChild(a);
+          tr.appendChild(td);
+          // Delete
+          td = document.createElement('td');
+          const x = document.createElement('button'); x.type = 'button'; x.className = 'hx-x'; x.textContent = '×';
+          x.setAttribute('aria-label', 'Delete ' + o.seller + ' · ' + o.lounge); x.title = 'Delete row';
+          x.addEventListener('click', (e) => { e.stopPropagation(); askDelete(o, tr); });
+          td.appendChild(x); tr.appendChild(td);
+          { const cells = [...tr.children]; cells.forEach((c, k) => { c.dataset.f = COLS[k].field; }); tr.replaceChildren(...order.map((k) => cells[k])); }
+          // Phone view: a details row under each row with the columns hidden there; tap the row to open it.
+          const det = document.createElement('tr'); det.className = 'hx-detail' + (o.listing === 'Liverpool FC direct' ? ' hx-lfc' : '') + (ri % 2 ? ' hx-alt' : '');
+          const dtd = document.createElement('td'); dtd.colSpan = COLS.length;
+          const dl = document.createElement('dl'); dl.className = 'hx-dl';
+          const make = {
+            seat_label: () => { const bb = document.createElement('button'); bb.dataset.stand = o.stand; bb.type = 'button'; bb.className = 'hx-hot hx-seat'; bb.dataset.kind = 'seat'; bb.dataset.offer = o.id; bb.setAttribute('aria-expanded', 'false'); bb.style.whiteSpace = 'pre-line'; editable(bb, o.id + '|seat', o.seat_label.replace(' · ', '\n')); return bb; },
+            hotel: () => hotelPill(),
+            food: () => fdDot('food', true),
+            drink: () => fdDot('drink', true),
+            status: () => { const n2 = document.createElement('div'); editable(n2, o.id + '|status', o.status); return n2; },
+          };
+          order.forEach((k) => {
+            const f = COLS[k].field; if (!make[f]) return;
+            const dt = document.createElement('dt'); dt.textContent = COLS[k].label;
+            const dd = document.createElement('dd'); dd.appendChild(make[f]()); dl.append(dt, dd);
+          });
+          const acts = document.createElement('div'); acts.className = 'hx-acts';
+          const a2 = a.cloneNode(true);
+          const del2 = document.createElement('button'); del2.type = 'button'; del2.className = 'hx-btn'; del2.textContent = 'Delete…';
+          del2.addEventListener('click', (e) => { e.stopPropagation(); det.classList.remove('open'); tr.classList.remove('open'); askDelete(o, tr); });
+          acts.append(a2); const dw = document.createElement('div'); dw.className = 'hx-dwrap'; dw.append(dl, acts); dtd.append(dw); det.appendChild(dtd); tr._det = det;
+          tr.addEventListener('click', (e) => {
+            if (!window.matchMedia('(max-width: 640px)').matches) return;
+            if (e.target.closest('a, button, [contenteditable], .hx-grip, .hx-rs')) return;
+            const open = !tr.classList.contains('open'); tr.classList.toggle('open', open); det.classList.toggle('open', open);
+          });
+          tb.appendChild(tr); tb.appendChild(det);
+        });
+        t.appendChild(tb); sc.appendChild(t); card.appendChild(sc); made.wrap.appendChild(card);
+      });
+      applyWidths();
+    },
+  });
+})();
+</script>
+</div>
+</body>
+</html>
