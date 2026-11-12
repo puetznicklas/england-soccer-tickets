@@ -12,7 +12,7 @@ A one-page dashboard comparing hospitality packages for **Brighton & Hove Albion
 
 ## About the prices
 
-Brighton prices hospitality by match grade (C, B, A or A+). The club's pages give the price for each grade but do not say which grade the Chelsea match is; that appears on the club's booking page. So the Cost column shows the range from C grade to A+ grade, and the Notes column lists all four grade prices. Executive and Legends boxes are sold per box, and are price on application for A and A+ grade matches.
+Brighton prices hospitality by match grade (C, B, A or A+). The Chelsea match is an A grade match, so the Cost column shows the club's A grade price per person, including VAT. Executive and Legends boxes are sold per box and are price on application for A grade matches.
 
 ## Run it
 
@@ -39,7 +39,7 @@ Run that from this folder, or from the repository root and open `/brighton-v-che
 
 ## Updating prices
 
-Edit `data/offers.json`. `price` is the listed price in `currency` (`GBP` or `USD`); set `price_max` as well to show a range. `fee_pct` adds a booking fee, and pound prices are converted with the rate in `data/fx.json`. Set `price` to `null` and fill `price_short` (for example "Ask club") when no per-person price is published. Once you know the match grade, set `price` to that grade's price and `price_max` to `null`.
+Edit `data/offers.json`. `price` is the listed price in `currency` (`GBP` or `USD`); set `price_max` as well to show a range. `fee_pct` adds a booking fee, and pound prices are converted with the rate in `data/fx.json`. Set `price` to `null` and fill `price_short` (for example "Ask club") when no per-person price is published.
 
 Prices and inclusions were collected from brightonandhovealbion.com on 11 Nov 2026.
 
